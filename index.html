@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Casio</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <h2>Máy Tính Casio</h2>
+        <form id="calcForm">
+            <input type="text" id="display" readonly>
+            <div class="input-group">
+                <input type="text" id="expression" placeholder="Nhập biểu thức..." required>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="insert('%')">%</button>
+                <button type="button" onclick="insert('/')">/</button>
+                <button type="button" onclick="insert('8')">8</button>
+                <button type="button" onclick="insert('9')">9</button>
+                <button type="button" onclick="insert('*')">*</button>
+                <button type="button" onclick="insert('7')">7</button>
+                <button type="button" onclick="insert('6')">6</button>
+                <button type="button" onclick="insert('5')">5</button>
+                <button type="button" onclick="insert('-')">-</button>
+                <button type="button" onclick="insert('2')">2</button>
+                <button type="button" onclick="insert('3')">3</button>
+                <button type="button" onclick="insert('4')">4</button>
+                <button type="button" onclick="insert('+')">+</button>
+                <button type="button" onclick="insert('0')">0</button>
+                <button type="button" onclick="insert('1')">1</button>
+                <button type="button" onclick="insert('.')">.</button>
+                <button type="button" onclick="toggleSign()">±</button>
+                <button type="button" onclick="calculate()">=</button>
+                <button type="button" onclick="clearDisplay()">C</button>
+                <button type="button" onclick="backspace()">←</button>
+            </div>
+        </form>
+        <div id="resultDisplay" class="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
